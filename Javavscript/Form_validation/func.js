@@ -11,7 +11,7 @@ form.addEventListener('submit',e=>{
     var vali = validate();
     if(vali)
     {
-        var sucess = document.getElementById('sucess').innerHTML = "sucess";
+      var sucess = document.getElementById('sucess').innerHTML = "sucess";
     }
 
 })
