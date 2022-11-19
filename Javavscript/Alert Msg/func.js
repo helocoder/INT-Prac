@@ -1,0 +1,8 @@
+function msg(){
+    var first_name = prompt('Enter First Name');
+    var last_name = prompt("Enter Last Name");
+
+    const full_name = first_name+" "+last_name;
+
+    alert("hellow "+full_name);
+}
