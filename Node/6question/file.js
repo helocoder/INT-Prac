@@ -2,6 +2,7 @@ const file = require('fs');
 const data = file.readFileSync('./config.json');
 console.log(data.toString());
 //write//
+
 // var data = "Hello i,m content from file :)";
 // file.writeFile('sample.txt',data,(err)=>{
 //     if(err)
