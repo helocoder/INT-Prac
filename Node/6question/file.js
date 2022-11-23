@@ -1,40 +1,18 @@
 const file = require('fs');
-const data = file.readFileSync('./config.json');
-console.log(data.toString());
+// const data = file.readFileSync('./config.json');
+
+//read
+// console.log(data.toString());
 //write//
+var content = [,
+    {"new_name":"Abhishek kumar"}
+];
 
-// var data = "Hello i,m content from file :)";
-// file.writeFile('sample.txt',data,(err)=>{
-//     if(err)
-//     {
-//         console.log(err)
-//     }
-//     else{
-
-//         console.log("file write success");
-//     }
-// });
-// //reading//
-// file.readFile('sample.txt',(err,data)=>{
-//     if(err)
-//     {
-//         console.log(err);
-//     }
-//     else{
-//         console.log(data.toString());
-
-//     }
-// })
+const msg = file.writeFilesync('./config.json',JSON.stringify(content,null,2),'utf8');
+if(msg)
+console.log("data update");
+else
+console.log(msg);
 
 
-//reading json//
-// file.readFile(data,'utf-8',(err,data)=>{
-//     if(err)
-//     {
-//         console.log(err);
-//         return;
-//     }
-//     else{
-//         console.log(data);
-//     }
-// })
+
