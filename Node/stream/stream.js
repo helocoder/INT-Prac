@@ -9,4 +9,4 @@ data.on('data',(chunk)=>{
 });
 
 var wrt = fs.createWriteStream('./dummy.txt');
-wrt.write("kaa re bhai...");
+wrt.write("hey, wrote in new file");

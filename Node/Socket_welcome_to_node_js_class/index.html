@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+     <h1 id="ms">msg</h1>
+    </div>
+    Enter msg:
+    <input id="msg" />
+    <button onclick="send()">Send</button>
+    
+</body>
+<script src="/socket.io/socket.io.js"></script>
+
+<script>
+    let soc = io();
+    function send(){
+      soc.emit('chat'," ");
+    }
+    soc.on('msg',(data)=>{
+       alert(data);
+    })
+</script>
+
+</html>
